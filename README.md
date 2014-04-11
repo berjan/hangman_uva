@@ -20,7 +20,7 @@ Technological Stack
 * Objective-C for iPhone
 * iOS 7.1
 
-Mockups
+Mockups and App Design
 ---------------------------
 ![Design Document v1.1](/doc/Design_document_hangman.jpg)
 
