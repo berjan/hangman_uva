@@ -7,6 +7,7 @@
 //
 
 #import "FlipsideViewController.h"
+#import "GamePlay.h"
 
 @interface MainViewController : UIViewController <FlipsideViewControllerDelegate>
 
@@ -15,7 +16,7 @@
 @property NSString *guessingWord;
 @property (weak, nonatomic) IBOutlet UIButton *btnStartKeyboard;
 
-@property int(totalGuessed);
+
 
 @property (weak, nonatomic) IBOutlet UILabel *lblTotalGuessed;
 
@@ -23,13 +24,11 @@
 @property (weak, nonatomic) IBOutlet UILabel *lblGuessedResult;
 @property (weak, nonatomic) IBOutlet UILabel *lblResultWinLoos;
 
-@property int(guessesLeft);
 
-@property int(totalIncorrectGuesses);
 
-@property int(highScore);
+@property GamePlay *gamePlay;
 
-@property NSString *guessedChars;
+
 
 @property BOOL *gameCompleted;
 

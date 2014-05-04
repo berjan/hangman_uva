@@ -42,11 +42,17 @@
         self.lblTotalCharsToGuess.text = integerAsString;
     }
     
+    self.txtPlayerName.text = [settings objectForKey:@"name_player"];
+    
     
     
     
 }
-
+- (IBAction)savePlayerName
+{
+     NSUserDefaults *settings = [NSUserDefaults standardUserDefaults];
+    [settings setValue:self.txtPlayerName.text forKey:@"name_player"];
+}
 - (IBAction)sliderChanged:(id)sender
 {
     NSUserDefaults *settings = [NSUserDefaults standardUserDefaults];
@@ -55,6 +61,8 @@
     self.lblTotalToGuessSetting.text = [NSString stringWithFormat:@"%d",val];
     [settings setInteger:val forKey:@"allowedGuesses"];
 }
+
+
 
 - (IBAction)sliderTotalCharsToGuessChanged:(id)sender
 {

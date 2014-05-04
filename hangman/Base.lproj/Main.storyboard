@@ -218,6 +218,16 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bdb-Eg-T4S">
+                                <rect key="frame" x="46" y="96" width="34" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Save">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="savePlayerName" destination="kIf-nA-PKG" eventType="touchUpInside" id="a2p-7W-zgm"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.25" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -232,6 +242,7 @@
                         <outlet property="lblTotalToGuessSetting" destination="7ki-cG-gT1" id="Mbx-cR-uE4"/>
                         <outlet property="sliTotalAllowedGuesses" destination="hi0-rz-Cwa" id="6Vy-lC-m9T"/>
                         <outlet property="sliTotalCharsToGuess" destination="4Bo-ri-1MX" id="PpJ-XX-ztc"/>
+                        <outlet property="txtPlayerName" destination="XWv-mc-zdj" id="qR5-Fb-5M1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xlJ-1o-FvB" sceneMemberID="firstResponder"/>

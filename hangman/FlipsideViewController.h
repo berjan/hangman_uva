@@ -22,6 +22,7 @@
 - (IBAction)done:(id)sender;
 
 @property (weak, nonatomic) IBOutlet UISlider *sliTotalAllowedGuesses;
+@property (weak, nonatomic) IBOutlet UITextField *txtPlayerName;
 
 @property (weak, nonatomic) IBOutlet UILabel *lblTotalAllowedGuesses;
 
@@ -29,4 +30,5 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *lblTotalCharsToGuess;
 
+-(IBAction)savePlayerName;
 @end
