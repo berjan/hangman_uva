@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		184B50CC191259800010E9F2 /* words2.plist in Resources */ = {isa = PBXBuildFile; fileRef = 184B50CB191259800010E9F2 /* words2.plist */; };
+		188BB98019137E2B003C6271 /* small.plist in Resources */ = {isa = PBXBuildFile; fileRef = 188BB97F19137E2B003C6271 /* small.plist */; };
 		18E4E0BD18F7D53200E88217 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18E4E0BC18F7D53200E88217 /* Foundation.framework */; };
 		18E4E0BF18F7D53200E88217 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18E4E0BE18F7D53200E88217 /* CoreGraphics.framework */; };
 		18E4E0C118F7D53200E88217 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18E4E0C018F7D53200E88217 /* UIKit.framework */; };
@@ -22,6 +24,7 @@
 		18E4E0E118F7D53200E88217 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18E4E0C018F7D53200E88217 /* UIKit.framework */; };
 		18E4E0E918F7D53200E88217 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 18E4E0E718F7D53200E88217 /* InfoPlist.strings */; };
 		18E4E0EB18F7D53200E88217 /* hangmanTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E4E0EA18F7D53200E88217 /* hangmanTests.m */; };
+		18F252031916236A0039087C /* GamePlay.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F252021916236A0039087C /* GamePlay.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		184B50CB191259800010E9F2 /* words2.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = words2.plist; sourceTree = "<group>"; };
+		188BB97F19137E2B003C6271 /* small.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = small.plist; sourceTree = "<group>"; };
 		18E4E0B918F7D53200E88217 /* hangman.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hangman.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18E4E0BC18F7D53200E88217 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		18E4E0BE18F7D53200E88217 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -56,6 +61,8 @@
 		18E4E0E618F7D53200E88217 /* hangmanTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "hangmanTests-Info.plist"; sourceTree = "<group>"; };
 		18E4E0E818F7D53200E88217 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		18E4E0EA18F7D53200E88217 /* hangmanTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = hangmanTests.m; sourceTree = "<group>"; };
+		18F252011916236A0039087C /* GamePlay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GamePlay.h; sourceTree = "<group>"; };
+		18F252021916236A0039087C /* GamePlay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GamePlay.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +127,8 @@
 				18E4E0CE18F7D53200E88217 /* Main.storyboard */,
 				18E4E0D118F7D53200E88217 /* MainViewController.h */,
 				18E4E0D218F7D53200E88217 /* MainViewController.m */,
+				18F252011916236A0039087C /* GamePlay.h */,
+				18F252021916236A0039087C /* GamePlay.m */,
 				18E4E0D418F7D53200E88217 /* FlipsideViewController.h */,
 				18E4E0D518F7D53200E88217 /* FlipsideViewController.m */,
 				18E4E0D718F7D53200E88217 /* Images.xcassets */,
@@ -131,6 +140,8 @@
 		18E4E0C318F7D53200E88217 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				188BB97F19137E2B003C6271 /* small.plist */,
+				184B50CB191259800010E9F2 /* words2.plist */,
 				18E4E0C418F7D53200E88217 /* hangman-Info.plist */,
 				18E4E0C518F7D53200E88217 /* InfoPlist.strings */,
 				18E4E0C818F7D53200E88217 /* main.m */,
@@ -233,9 +244,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				188BB98019137E2B003C6271 /* small.plist in Resources */,
 				18E4E0D818F7D53200E88217 /* Images.xcassets in Resources */,
 				18E4E0C718F7D53200E88217 /* InfoPlist.strings in Resources */,
 				18E4E0D018F7D53200E88217 /* Main.storyboard in Resources */,
+				184B50CC191259800010E9F2 /* words2.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,6 +268,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				18E4E0CD18F7D53200E88217 /* AppDelegate.m in Sources */,
+				18F252031916236A0039087C /* GamePlay.m in Sources */,
 				18E4E0D318F7D53200E88217 /* MainViewController.m in Sources */,
 				18E4E0D618F7D53200E88217 /* FlipsideViewController.m in Sources */,
 				18E4E0C918F7D53200E88217 /* main.m in Sources */,
@@ -462,6 +476,7 @@
 				18E4E0F018F7D53200E88217 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		18E4E0F118F7D53200E88217 /* Build configuration list for PBXNativeTarget "hangmanTests" */ = {
 			isa = XCConfigurationList;
@@ -470,6 +485,7 @@
 				18E4E0F318F7D53200E88217 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

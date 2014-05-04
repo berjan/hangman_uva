@@ -16,8 +16,17 @@
 
 @interface FlipsideViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UILabel *lblTotalToGuessSetting;
 @property (weak, nonatomic) id <FlipsideViewControllerDelegate> delegate;
 
 - (IBAction)done:(id)sender;
+
+@property (weak, nonatomic) IBOutlet UISlider *sliTotalAllowedGuesses;
+
+@property (weak, nonatomic) IBOutlet UILabel *lblTotalAllowedGuesses;
+
+@property (weak, nonatomic) IBOutlet UISlider *sliTotalCharsToGuess;
+
+@property (weak, nonatomic) IBOutlet UILabel *lblTotalCharsToGuess;
 
 @end
